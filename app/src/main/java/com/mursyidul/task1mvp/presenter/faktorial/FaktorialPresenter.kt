@@ -12,8 +12,8 @@ class FaktorialPresenter(var ppViewFaktorial :FaktorialInterface) {
         var factorial = BigInteger.ONE
         for (i in 1..(cinputangkafaktorial.toInt()))
         {
-             //factorial *=i.toLong()
-            factorial = factorial.multiply(BigInteger.valueOf(cinputangkafaktorial.toLong()))
+             factorial *=i.toBigInteger()
+
         }
         val hasil = HasilFaktorial()
         hasil.hasil = factorial
